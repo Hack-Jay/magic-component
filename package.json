@@ -1,0 +1,86 @@
+{
+    "name": "magic-component",
+    "version": "1.0.0",
+    "private": true,
+    "main": "dist/magic-component.umd.js",
+    "module": "dist/magic-component.esm.js",
+    "types": "dist/main.d.ts",
+    "dependencies": {
+        "@babel/core": "^7.14.6",
+        "@babel/preset-env": "^7.14.7",
+        "@babel/preset-react": "^7.14.5",
+        "@testing-library/jest-dom": "^5.11.4",
+        "@testing-library/react": "^11.1.0",
+        "@testing-library/user-event": "^12.1.10",
+        "@types/jest": "^26.0.15",
+        "@types/node": "^12.0.0",
+        "@types/react": "^17.0.0",
+        "@types/react-dom": "^17.0.0",
+        "antd": "^4.16.5",
+        "lodash-es": "^4.17.21",
+        "react-scripts": "4.0.3",
+        "rollup-plugin-babel": "^4.4.0",
+        "rollup-plugin-typescript2": "^0.30.0",
+        "typescript": "^4.1.2",
+        "web-vitals": "^1.0.1"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "test": "react-scripts test",
+        "build": "npm run clean && npm run build:es && npm run build:umd",
+        "build:es": "npm run clean &&  rollup -w --config build/rollup.es.config.js",
+        "build:umd": "npm run clean && rollup -w --config build/rollup.umd.config.js",
+        "clean": "rimraf ./dist",
+        "eject": "react-scripts eject",
+        "prepare": "husky install",
+        "json-server": "json-server --watch __mock-server__/db.json "
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest",
+            "prettier"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^12.1.4",
+        "@commitlint/config-conventional": "^12.1.4",
+        "@rollup/plugin-commonjs": "^19.0.0",
+        "@rollup/plugin-node-resolve": "^13.0.0",
+        "@rollup/plugin-typescript": "^8.2.1",
+        "@types/lodash-es": "^4.17.4",
+        "eslint-config-prettier": "^8.3.0",
+        "husky": ">=6",
+        "json-server": "^0.16.3",
+        "lint-staged": ">=10",
+        "postcss": "^8.3.5",
+        "prettier": "2.3.0",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "rimraf": "^3.0.2",
+        "rollup": "^2.52.3",
+        "rollup-plugin-less-modules": "^0.1.11",
+        "rollup-plugin-peer-deps-external": "^2.2.4",
+        "rollup-plugin-postcss": "^4.0.0",
+        "tslib": "^2.3.0"
+    },
+    "peerDependencies": {
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2"
+    },
+    "lint-staged": {
+        "*.{js,css,md,ts,tsx}": "prettier --write"
+    }
+}
