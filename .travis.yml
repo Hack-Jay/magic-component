@@ -1,11 +1,11 @@
 language: node_js
 node_js:
-  - node
+- node
 deploy:
   provider: npm
   email: 908625658@qq.com
   skip_cleanup: true
   api_key:
-    secure: 3a543c1e-dd94-490c-8cd7-275b3aaaed2d
+    secure: TfhsuNh9YBs6v49z+KvLjcW7mgTJ68c6Uhe8IJuTXV0ypF/vYdtAWf5Dithx3MkkslFOCCW5fGMndTV2u0Xo88EEmsDDpCktCtWpMAIOsveTXBvo/eKBmmzpqbHkpC6lu8nV+nZaATuJcWaR0Uhk5b6dhGd6s8fybHE2UMXtMblQAhx275rJA7nrGCKVhIRceikSwAh51LDJBoJvk5DnumpxmH0RwusWYyYeyiN6CyDzggHxNILH6A6zuMYwG16bACX2fE9XuPiywx4WO4vEuEfpWy913dmaHTkM0jx2ZdRi9LOtoLBZ1HqQApTlVeveVwx1uIs4PcwBoUxB3p4GcCMnhQAcSYWZXFk23wRv1ZBI5GwLAJrgtAprBz0Pba7Gak2CcYPJyiW7S8wtkTTiVfI91hGVAndfMWYU0mY6Exy7dNei1WmOSOpeZfWIvrSBqSvCVPvpLcHvEvkwfWZ9Coe+itK3zfoJodLnQ9JaErNwuETQab6KE7MEi4EIjp1dKmOOd7WdqbRvlfKhLIp5oQH2aMYr4WWsLQNIA3RcdjYnpKyFQbU3kY1MUyYnnHfiJQ310cGYUGH8yjxRwQAsGia0Rspq5QPwV5etZQzruo/YdqN70JXA/+AbXq2tMgSpiHTiZCXK2vtpxrZpnsIMtMlGlsgotzQWZIqv4RuSXaY=
   on:
     tags: true
