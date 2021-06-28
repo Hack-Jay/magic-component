@@ -1,6 +1,14 @@
 import { useMemo, useCallback } from "react";
-import { pick } from "lodash-es";
+import { without, pick } from "lodash-es";
+import { textDefaultProps } from "config/defaultProps";
 import { IImageProps, ITextProps } from "config/type";
+
+export const textStylePropsName = without(
+  Object.keys(textDefaultProps),
+  "actionType",
+  "url",
+  "text"
+);
 
 // 返回组件的style属性和点击事件
 export const useComponentCommon = (
