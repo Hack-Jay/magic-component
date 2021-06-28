@@ -6,6 +6,6 @@ deploy:
   email: 908625658@qq.com
   skip_cleanup: true
   api_key:
-    secure: b48d30ee-4572-498b-ade3-8a11ec5d3724
+    secure: 3a543c1e-dd94-490c-8cd7-275b3aaaed2d
   on:
     tags: true
