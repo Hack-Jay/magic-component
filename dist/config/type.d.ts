@@ -17,6 +17,7 @@ export interface ICommonComponentProps {
     left: string;
     top: string;
     right: string;
+    idEditing?: boolean;
 }
 export interface ITextProps extends ICommonComponentProps {
     tag?: string;

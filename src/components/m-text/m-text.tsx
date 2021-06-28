@@ -10,7 +10,7 @@ interface IProps extends ITextProps {
   tag: string;
 }
 
-const baseCls = "m-text-comp";
+const baseCls = "m-text-comp mmm";
 const MText: React.FC<IProps> = (props) => {
   console.log("this is package m-text update ts");
   const { tag: Tag, text } = props;

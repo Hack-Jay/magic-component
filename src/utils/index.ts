@@ -17,7 +17,7 @@ export const useComponentCommon = (
 ): [{ [key: string]: any }, React.MouseEventHandler<HTMLDivElement>] => {
   const styleProps = useMemo(() => pick(props, picks), [props, picks]);
   const handleClick = useCallback(() => {
-    if (props.actionType === "url" && props.url) {
+    if (props.actionType === "url" && props.url && !props.idEditing) {
       window.location.href = props.url;
     }
   }, [props]);
