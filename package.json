@@ -11,7 +11,7 @@
     },
     "scripts": {
         "start": "react-scripts start",
-        "test": "react-scripts test",
+        "test": "echo test",
         "build": "npm run clean && npm run build:es && npm run build:umd",
         "build:es": "rollup --config build/rollup.es.config.js",
         "build:umd": "rollup --config build/rollup.umd.config.js",
